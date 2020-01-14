@@ -48,10 +48,10 @@ age = int(input('Your age: '))
 weight = int(input('Your weight: '))
 temp_value = 0
 #if 50 > weight > 120:
-if age < 30 and 50 < weight < 120:
+if age <= 30 and 50 <= weight <= 120:
     print(name, ' ', surname, ', Your condition is good')
 elif weight < 50 or weight > 120:
-    if age > 40:
+    if age >= 40:
         print(name, ' ', surname, ', You need a doctor')
     elif age < 40 and age > 30:
         print(name, ' ', surname, ', More sports needed')
