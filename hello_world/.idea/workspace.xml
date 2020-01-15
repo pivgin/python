@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c24e0c4d-b87f-436d-8bb5-7e2cb70b2e5e" name="Default Changelist" comment="Homework_1 done">
-      <change afterPath="$PROJECT_DIR$/Lesson_4.py" afterDir="false" />
+    <list default="true" id="c24e0c4d-b87f-436d-8bb5-7e2cb70b2e5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lesson_4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="396" column="2" selection-start-line="396" selection-start-column="2" selection-end-line="396" selection-end-column="2" />
+            <state relative-caret-position="469">
+              <caret line="400" column="26" lean-forward="true" selection-start-line="400" selection-start-column="26" selection-end-line="400" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -212,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578991124808</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lesson 4 completed">
+      <created>1579095918219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579095918219</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -242,7 +248,8 @@
     <MESSAGE value="uncommented all Lesson_1 and Lesson_2&#10;Input, print; operations; variables; types of variables; if, else, elfi; while, break, continue, etc." />
     <MESSAGE value="Homework_1 done" />
     <MESSAGE value="some changes were made to homework after video with review" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes were made to homework after video with review" />
+    <MESSAGE value="Lesson 4 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 completed" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -276,8 +283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson_4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="396" column="2" selection-start-line="396" selection-start-column="2" selection-end-line="396" selection-end-column="2" />
+        <state relative-caret-position="469">
+          <caret line="400" column="26" lean-forward="true" selection-start-line="400" selection-start-column="26" selection-end-line="400" selection-end-column="26" />
         </state>
       </provider>
     </entry>
