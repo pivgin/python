@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lesson_4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3288">
-              <caret line="137" selection-start-line="137" selection-end-line="140" selection-end-column="9" />
+            <state relative-caret-position="543">
+              <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+            <state relative-caret-position="24">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -34,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="7656">
               <caret line="320" selection-start-line="320" selection-end-line="320" />
             </state>
           </provider>
@@ -52,6 +52,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Lists</find>
+      <find>format</find>
+      <find>Dict</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,8 +76,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="954" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1056" />
@@ -263,11 +265,19 @@
       <option name="project" value="LOCAL" />
       <updated>1579099134769</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Homework 2, task_1 finished">
+      <created>1579616536316</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579616536316</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="954" y="-8" width="974" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.08760684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -294,15 +304,16 @@
     <MESSAGE value="some changes were made to homework after video with review" />
     <MESSAGE value="Lesson 4 completed" />
     <MESSAGE value="Homework 2, task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 2, task" />
+    <MESSAGE value="Homework 2, task_1 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 2, task_1 finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/hw_2.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="4" />
+          <line>129</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -337,24 +348,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson_4.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3288">
-          <caret line="137" selection-start-line="137" selection-end-line="140" selection-end-column="9" />
+        <state relative-caret-position="7656">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/Lesson_4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        <state relative-caret-position="543">
+          <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hw_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        <state relative-caret-position="24">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
