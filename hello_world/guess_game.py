@@ -13,7 +13,9 @@ print()
 number = random.randint(1, 100)
 input_number = 0
 tries = 0
-max_tries = 5
+levels = {1: 15, 2: 10, 3: 5, 4: 3, 5: 1}
+level = int(input('Please select the level (from 1 till 5 where 5 is hardest): '))
+max_tries = levels[level]
 #print(number)
 while input_number != number:
     tries += 1
