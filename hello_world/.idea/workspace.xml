@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c24e0c4d-b87f-436d-8bb5-7e2cb70b2e5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/guess_game.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,25 +17,25 @@
         <entry file="file://$PROJECT_DIR$/Lesson_4.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="543">
-              <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hw_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+              <caret line="258" column="1" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/codecs.py">
+        <entry file="file://$PROJECT_DIR$/hw_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7656">
-              <caret line="320" selection-start-line="320" selection-end-line="320" />
+            <state relative-caret-position="552">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="143" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/guess_game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -73,6 +73,7 @@
         <option value="$PROJECT_DIR$/Lesson_4.py" />
         <option value="$PROJECT_DIR$/HW_2.py" />
         <option value="$PROJECT_DIR$/hw_2.py" />
+        <option value="$PROJECT_DIR$/guess_game.py" />
       </list>
     </option>
   </component>
@@ -86,7 +87,20 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hello_world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hello_world" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -104,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hw_2">
+  <component name="RunManager" selected="Python.guess_game">
     <configuration name="Lesson_4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hello_world" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,6 +132,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson_4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="guess_game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="hello_world" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/guess_game.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,6 +226,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.guess_game" />
         <item itemvalue="Python.hw_2" />
         <item itemvalue="Python.Lesson_4" />
         <item itemvalue="Python.hw_1" />
@@ -272,14 +308,35 @@
       <option name="project" value="LOCAL" />
       <updated>1579667666709</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Game guess the number (1 level)">
+      <created>1579860780089</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1579860780089</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Game guess the number (2 level)&#10;adding max attempts and changing code a bit to fit">
+      <created>1579861611342</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1579861611342</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Game guess the number (3 level)&#10;levels added">
+      <created>1579862329055</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1579862329055</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.08760684" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08760684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -307,7 +364,10 @@
     <MESSAGE value="Homework 2, task_1 finished" />
     <MESSAGE value="Homework 2, task_2 finished" />
     <MESSAGE value="Homework 2, task_3 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 2, task_3 finished" />
+    <MESSAGE value="Game guess the number (1 level)" />
+    <MESSAGE value="Game guess the number (2 level)&#10;adding max attempts and changing code a bit to fit" />
+    <MESSAGE value="Game guess the number (3 level)&#10;levels added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game guess the number (3 level)&#10;levels added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -350,9 +410,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hw_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="143" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7656">
+        <state relative-caret-position="811">
           <caret line="320" selection-start-line="320" selection-end-line="320" />
         </state>
       </provider>
@@ -360,14 +427,14 @@
     <entry file="file://$PROJECT_DIR$/Lesson_4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
-          <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
+          <caret line="258" column="1" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw_2.py">
+    <entry file="file://$PROJECT_DIR$/guess_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        <state relative-caret-position="294">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
