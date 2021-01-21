@@ -17,6 +17,8 @@
 print('Rick\'s vaccine')
 print('------------||------------')
 print()
+
+# Asking for list of planets section
 # list_of_planets_ = [input('Input list of planets space separated')]
 # print(list_of_planets_)
 
@@ -29,21 +31,28 @@ print()
 #     i += 1
 # print(list_of_planets_)
 
+# Program itself
 # list_of_planets_ = [5, 2, 4, 3, 5, 6, 2]
+#list_of_planets_ = [4, 8, 5, 2]
+#list_of_planets_ = [4, 2, 3, 4]
 list_of_planets_ = [5, 2, 4, 3, 5, 6, 2]
+# checking for max values
 max_value = max(list_of_planets_)
-print(max_value)
+# print('Max value is', max_value)
+# checking for positions of max values
 max_list_positions = [i for i, j in enumerate(list_of_planets_) if j == max_value]
-print(max_list_positions)
+# print('Positions of max elements', max_list_positions)
+# creating copy of list of planets
 copy_list_planets = list_of_planets_.copy()
 print(copy_list_planets)
-# slit by 3 elements
+# slit whole list by 3 elements
 split_list = []
-for i in range (0, len(copy_list_planets),3):
-    split_list.append(copy_list_planets[i : i+3])
-print(split_list)
-print(split_list[0])
-print(len(split_list))
+for i in range(0, len(copy_list_planets), 3):
+    split_list.append(copy_list_planets[i: i+3])
+print('Slit list by 3 elements (split_list): ', split_list)
+# print(split_list[0])
+# print('Number of slit sections', len(split_list))
+# Building up list with positions of all best values better to visit
 best_list = []
 increment = 0
 # for i in range (0,len(split_list[0])):
@@ -53,21 +62,22 @@ for j in range(0, len(split_list)-1):
         best_list.append(2+increment)
     else:
         best_list.append(1)
-    print(best_list)
+    # print(best_list)
     increment += 3
 
-print(increment)
-print ('-----------last part---------')
+# print('-----------last part---------')
+# Checking last section of initial list of planets
 last_mass_number = len(split_list)-1
-print (last_mass_number)
-print(increment)
+# print(last_mass_number)
+# print(increment)
 last_list = []
+# creating copy of last section of planets
 last_list = split_list[last_mass_number].copy()
 if len(last_list) == 1:
     best_list.append(0+increment)
 elif len(last_list) == 2:
     max_last_list_positions = [n for n, m in enumerate(last_list) if m == max(last_list)]
-    for i in range (0,len(max_last_list_positions)):
+    for i in range(0, len(max_last_list_positions)):
         max_last_list_positions[i] += increment
         best_list.append(max_last_list_positions[i])
 else:
@@ -76,19 +86,20 @@ else:
         best_list.append(2+increment)
     else:
         best_list.append(1+increment)
-print(best_list)
+print('Positions of potentially best planets to visit (best_list): ', best_list)
+# searching for problem elements on the boarders of split sections
 problem_elements = []
 
-for i in range (1,len(best_list)-1):
+for i in range(1, len(best_list)-1):
     if ((best_list[i] - best_list[i+1]) == -1) or ((best_list[i-1] - best_list[i]) == -1):
         problem_elements.append(best_list[i])
 
 if best_list[len(best_list)-1] - best_list[len(best_list)-2] == 1:
     problem_elements.append(best_list[len(best_list) - 1])
 
-print(problem_elements)
-print(copy_list_planets)
-# priority of thirds
+print('List of positions of problem elements (problem_elements): ', problem_elements)
+# print('Initial list of planets', copy_list_planets)
+# priority of sections of thirds
 priority_list = []
 temp_sum = 0
 for i in range(0, len(split_list)-1):
@@ -97,7 +108,7 @@ for i in range(0, len(split_list)-1):
         priority_list.append(temp_sum)
     else:
         priority_list.append(split_list[i][1])
-
+# checking last priority of last section
 if len(last_list) == 1:
     priority_list.append(last_list[0])
 elif len(last_list) == 2:
@@ -107,19 +118,28 @@ else:
         priority_list.append(last_list[0] + last_list[2])
     else:
         priority_list.append(last_list[1])
-print(priority_list)
+print('List of max possible sums in sections of planets (priority_list): ', priority_list)
 third_priority = priority_list.index(max(priority_list))
-print(third_priority)
+# print(third_priority)
 high_priority_list = split_list[third_priority]
-print(high_priority_list)
-third_increment = 0
-if third_priority == 0:
-    third_increment = 0
-else:
-    third_increment = third_priority + 2
-# for i in range (0, 2):
-#     if (i + third_increment) in best_list:
-#         print('ok')
-#     else:
-#         best_list.remove(int(i + third_increment))
-# print(best_list)
+print('high_priority_list: ', high_priority_list)
+# TODO add if verification for case with one max trio
+max_priority_list = []
+max_priority_list = [n for n, m in enumerate(priority_list) if m == max(priority_list)]
+print('Positions of best trios (max_priority_list):', max_priority_list)
+
+for i in range(0, len(max_priority_list)-1):
+    if (split_list[i][1] + split_list[i+1][0]) > (split_list[i][2] + split_list[i+1][1]):       #TODO to make universal
+        best_list.remove(3)     #TODO to make universal
+# # adding increment to address element in best_list by value
+# third_increment = 0
+# if third_priority == 0:
+#     third_increment = 0
+# else:
+#     third_increment = third_priority + 2
+# # for i in range (0, 2):
+# #     if (i + third_increment) in best_list:
+# #         print('ok')
+# #     else:
+# #         best_list.remove(int(i + third_increment))
+# # print(best_list)
