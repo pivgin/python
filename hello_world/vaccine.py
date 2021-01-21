@@ -30,7 +30,7 @@ print()
 # print(list_of_planets_)
 
 # list_of_planets_ = [5, 2, 4, 3, 5, 6, 2]
-list_of_planets_ = [5, 2, 4, 3, 5, 6, 2, 2]
+list_of_planets_ = [5, 2, 4, 3, 5, 6, 2]
 max_value = max(list_of_planets_)
 print(max_value)
 max_list_positions = [i for i, j in enumerate(list_of_planets_) if j == max_value]
@@ -87,16 +87,39 @@ if best_list[len(best_list)-1] - best_list[len(best_list)-2] == 1:
     problem_elements.append(best_list[len(best_list) - 1])
 
 print(problem_elements)
+print(copy_list_planets)
+# priority of thirds
+priority_list = []
+temp_sum = 0
+for i in range(0, len(split_list)-1):
+    temp_sum = int(split_list[i][0] + split_list[i][2])
+    if temp_sum > split_list[i][1]:
+        priority_list.append(temp_sum)
+    else:
+        priority_list.append(split_list[i][1])
 
-
-
-
-
-
-# list_of_planets = [13, 5, 13, 8, 2, 13, 13, 4, 6]
-# my_list_2 = [2, 7, 13, 3]
-# my_list_3 = []
-# my_list_4 = []
-# i = int(input('Input the number of elements in massive 1: '))
-# j = int(input('Input the number of elements in massive 2: '))
-# values for 1st list
+if len(last_list) == 1:
+    priority_list.append(last_list[0])
+elif len(last_list) == 2:
+    priority_list.append(max(last_list))
+else:
+    if (last_list[0] + last_list[2]) > (last_list[1]):
+        priority_list.append(last_list[0] + last_list[2])
+    else:
+        priority_list.append(last_list[1])
+print(priority_list)
+third_priority = priority_list.index(max(priority_list))
+print(third_priority)
+high_priority_list = split_list[third_priority]
+print(high_priority_list)
+third_increment = 0
+if third_priority == 0:
+    third_increment = 0
+else:
+    third_increment = third_priority + 2
+# for i in range (0, 2):
+#     if (i + third_increment) in best_list:
+#         print('ok')
+#     else:
+#         best_list.remove(int(i + third_increment))
+# print(best_list)
