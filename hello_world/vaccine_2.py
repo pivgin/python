@@ -16,7 +16,7 @@ print()
 # print(list_of_planets_)
 
 # Program itself
-list_of_planets = [5, 2, 4, 3, 5, 6, 2, 5, 2]
+list_of_planets = [5, 2, 4, 3, 5, 6, 2]
 # list_of_planets_ = [4, 8, 5, 2]
 # list_of_planets_ = [4, 2, 3, 4]
 # list_of_planets_ = [5, 2, 4, 3, 5, 6, 2, 2]
@@ -24,10 +24,13 @@ print(list_of_planets)
 copy_list_planets = list_of_planets.copy()
 # Splitting list into trios
 split_list = []
+condition = True
+
 for i in range(0, len(copy_list_planets), 3):
     split_list.append(copy_list_planets[i: i+3])
 print('Split list by 3 elements (split_list): ', split_list)
 # Finding best elements in trios
+problem_elements = []
 best_list = []
 increment = 0
 for j in range(0, len(split_list)-1):
@@ -87,17 +90,37 @@ max_sum_in_trios = []
 max_sum_in_trios = [n for n, m in enumerate(sum_in_trios) if m == max(sum_in_trios)]
 print('Positions of best trios (max_sum_in_trios):', max_sum_in_trios)
 if len(max_sum_in_trios) > 1:
-    for i in range(1, len(max_sum_in_trios)-1):
-        if max_sum_in_trios[i] - max_sum_in_trios[i-1] == 1:
-            first_trio_to_start = max_sum_in_trios[i-1]
+    for i in range(0, len(max_sum_in_trios)-1):
+        if max_sum_in_trios[i+1] - max_sum_in_trios[i] == 1:
+            first_trio_to_start = max_sum_in_trios[i]
 else:
     first_trio_to_start = sum_in_trios.index(max(sum_in_trios))
 print('First trio to start is (first_trio_to_start): ', first_trio_to_start)
 # Preparing problem_list
-problem_elements = []
+problem_elements.clear()
 for i in range(1, len(best_list)-1):
     if ((best_list[i] - best_list[i+1]) == -1) or ((best_list[i-1] - best_list[i]) == -1):
         problem_elements.append(best_list[i])
 if best_list[len(best_list)-1] - best_list[len(best_list)-2] == 1:
     problem_elements.append(best_list[len(best_list) - 1])
 print('List of positions of problem elements (problem_elements): ', problem_elements)
+# Resolving problem elements
+print(split_list)
+if split_list[first_trio_to_start][1] + split_list[first_trio_to_start+1][0] > split_list[first_trio_to_start+1][1] + split_list[first_trio_to_start][2]:
+    split_list[first_trio_to_start][2] = 0
+    split_list[first_trio_to_start + 1][1] = 0
+elif split_list[first_trio_to_start][1] + split_list[first_trio_to_start+1][0] < split_list[first_trio_to_start+1][1] + split_list[first_trio_to_start][2]:
+    split_list[first_trio_to_start][1] = 0
+    split_list[first_trio_to_start +1][0] = 0
+else:
+    if split_list[first_trio_to_start][2] >= split_list[first_trio_to_start + 1][0]:
+        split_list[first_trio_to_start][1] = 0
+        split_list[first_trio_to_start + 1][0] = 0
+    else:
+        split_list[first_trio_to_start][2] = 0
+        split_list[first_trio_to_start + 1][1] = 0
+print('UPD split_list: ', split_list)
+print(problem_elements)
+# Searching for new sums and problem elements
+while problem_elements.count() > 1:
+
