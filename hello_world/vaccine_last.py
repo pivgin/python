@@ -1,6 +1,24 @@
-print('Rick\'s vaccine')
-print('------------||------------')
-print()
+import sys
+
+input_param_w_list = sys.argv[1]
+list_of_planets = []
+# input_param_w_list = '[1,2,3]'
+for i in input_param_w_list:
+    if (i == '[') or (i == ',') or (i == ']'):
+        continue
+    else:
+        list_of_planets.append(int(i))
+print('List of planets: ', list_of_planets)
+# Not in the mood to do validation of input command line params
+
+# print('List of planets: ', list_of_planets)
+# for i in list_of_planets:
+#     print(int(i))
+#     if i.isdigit():
+#         continue
+#     else:
+#         print('Your list of planets is not correct. Please restart the program passing only natural values in next format: [1,2,3]')
+
 # Asking for list of planets section
 # TODO add input validation
 # list_of_planets_ = [input('Input list of planets space separated')]
@@ -17,7 +35,7 @@ print()
 
 # Program itself
 # list_of_planets = [5, 2, 4, 3, 5, 6, 2, 2, 2]
-list_of_planets = [4, 4, 4, 3, 3, 3, 5, 5, 5]
+# list_of_planets = [4, 4, 4, 3, 3, 3, 5, 5, 5]
 # list_of_planets = [4, 8, 5, 2]
 # list_of_planets = [4, 2, 3, 4]
 # list_of_planets = [5, 2, 4, 3, 5, 6, 2]
@@ -151,26 +169,24 @@ while condition:
     print('-------------------------End of cycle----------------------')
     if len(problem_elements) <= 1:
         break
-# print('Last problem elements (problem_elements): ', problem_elements)
 result = 0
 for i in best_list:
     result += copy_list_planets[i]
 print('Result (result): ', result)
-# # Cheat cycle
-# list_chet = []
-# list_nechet = []
-# sum_chet = 0
-# sum_nechet = 0
-# final_result = 0
-# for i in range(0, len(list_of_planets)):
-#     if i % 2 == 0:
-#         list_chet.append(list_of_planets[i])
-#     else:
-#         list_nechet.append(list_of_planets[i])
-# for i in list_chet:
-#     sum_chet = sum_chet + i
-# for i in list_nechet:
-#     sum_nechet = sum_nechet + i
-# temp_list = [sum_nechet, sum_chet, result]
-# print(max(temp_list))
+list_chet = []
+list_nechet = []
+sum_chet = 0
+sum_nechet = 0
+final_result = 0
+for i in range(0, len(list_of_planets)):
+    if i % 2 == 0:
+        list_chet.append(list_of_planets[i])
+    else:
+        list_nechet.append(list_of_planets[i])
+for i in list_chet:
+    sum_chet = sum_chet + i
+for i in list_nechet:
+    sum_nechet = sum_nechet + i
+temp_list = [sum_nechet, sum_chet, result]
+print(max(temp_list))
 
