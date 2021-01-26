@@ -1,12 +1,22 @@
 import sys
 
-input_param_w_list = sys.argv[1]
+# input_param_w_list = sys.argv[1]
 list_of_planets = []
-for i in input_param_w_list:
-    if (i == '[') or (i == ',') or (i == ']'):
+temp_list_planets = []
+input_param_w_list = '[41]'
+print(input_param_w_list.split(','))
+temp_string = ''
+temp_string_2 = ''
+for i in range(0, len(input_param_w_list)):
+    if input_param_w_list[i] == '[' or input_param_w_list[i] == ']' or input_param_w_list[i] == '-':
         continue
     else:
-        list_of_planets.append(int(i))
+        temp_list_planets.append(input_param_w_list[i])
+for i in temp_list_planets:
+    temp_string += i
+temp_string_2 = temp_string.split(',')
+for i in temp_string_2:
+    list_of_planets.append(int(i))
 # Not in the mood to do validation of input command line params
 # Program itself
 copy_list_planets = list_of_planets.copy()
