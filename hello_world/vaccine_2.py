@@ -2,7 +2,7 @@ print('Rick\'s vaccine')
 print('------------||------------')
 print()
 # Asking for list of planets section
-# TODO add input verification
+# TODO add input validation
 # list_of_planets_ = [input('Input list of planets space separated')]
 # print(list_of_planets_)
 
@@ -16,10 +16,10 @@ print()
 # print(list_of_planets_)
 
 # Program itself
-list_of_planets = [5, 2, 4, 3, 5, 6, 2, 2, 2]           # TODO this example does not work
+# list_of_planets = [5, 2, 4, 3, 5, 6, 2, 2, 2]           # TODO this example does not work
 # list_of_planets = [4, 4, 4, 3, 3, 3, 5, 5, 5]             # TODO this example does not work
 # list_of_planets = [4, 8, 5, 2]
-# list_of_planets = [4, 2, 3, 4]
+list_of_planets = [4, 2, 3, 4]
 # list_of_planets = [5, 2, 4, 3, 5, 6, 2]
 print(list_of_planets)
 copy_list_planets = list_of_planets.copy()
@@ -56,11 +56,6 @@ while condition:
         else:
             best_list.append(1+increment)
         increment += 3
-    # Checking last section of initial list of planets
-    # last_list_position = len(split_list)-1
-    # last_list = []
-    # # creating copy of last section of planets
-    # last_list = split_list[last_list_position].copy()
     if len(last_list) == 1:
         best_list.append(0+increment)
     elif len(last_list) == 2:
@@ -96,10 +91,6 @@ while condition:
             sum_in_trios.append(last_list[1])
     print('List of max possible sums in sections of planets (sum_in_trios): ', sum_in_trios)
 
-    # trios_priority = sum_in_trios.index(max(sum_in_trios))
-    # # print(trios_priority)
-    # high_sum_in_trios = split_list[trios_priority]
-    # print('high_sum_in_trios: ', high_sum_in_trios)
     # TODO add if verification for case with one max trio           almost done
     print('Problem list: ', problem_elements)
     # Preparing problem_list
@@ -143,9 +134,7 @@ while condition:
     elif len(max_sum_in_trios) == 0:
         break
     else:
-        # first_trio_to_start = sum_in_trios.index(max(sum_in_trios))
         first_trio_to_start = trios_w_problems[int(max_sum_in_trios[0])]
-        # first_trio_to_start = trios_w_problems.pop()
     print('First trio to start is (first_trio_to_start): ', first_trio_to_start)
     print('Split list: ', split_list)
     # TODO полное дерьмо, нихера эта логика не работает
@@ -184,18 +173,15 @@ list_nechet = []
 sum_chet = 0
 sum_nechet = 0
 final_result = 0
-for i in list_of_planets:
+for i in range(0, len(list_of_planets)):
     if i % 2 == 0:
-        list_chet.append(i)
+        list_chet.append(list_of_planets[i])
     else:
-        list_nechet.append(i)
+        list_nechet.append(list_of_planets[i])
 for i in list_chet:
     sum_chet = sum_chet + i
 for i in list_nechet:
     sum_nechet = sum_nechet + i
 temp_list = [sum_nechet, sum_chet, result]
 print(max(temp_list))
-# if sum_chet >= sum_nechet and sum_chet >= result:
-#     final_result = sum_chet
-# elif sum_chet
 
